@@ -3,6 +3,26 @@ body
 	margin: 0;
 }
 
+.mobile_device_380px {
+	display: none;
+}
+.mobile_device_480px {
+	display: none;
+}
+
+
+/* if mobile device max width 380px */
+@media only screen and (max-device-width: 380px) {
+	.mobile_device_380px{display: block;}       
+	.desktop {display: none;}
+} 
+
+/* if mobile device max width 480px */
+@media only screen and (max-device-width: 480px) {
+	.mobile_device_480px{display: block;}
+	.desktop {display: none;}
+}
+
 .topbar
 {
 	display: flex;
@@ -92,7 +112,7 @@ body
 	width: 2.2em;
 	line-height: 2.2em;
 	display: inline-block;
-	border-radius: 50%;
+	border-radius: 10%;
 	border-color: #fff;
 	border-style: solid;
 	border-width: 0.04em;
