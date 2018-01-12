@@ -1,16 +1,7 @@
-html {
-	background: black;
-	color: white;
-}
-
 body {
 	margin: 0;
-	background: black;
+	background-color: black;
 	color: white;
-}
-
-p {
-	margin-top: -2em;
 }
 
 div {
@@ -19,6 +10,11 @@ div {
 
 table {
 	border: 0px;
+}
+
+hr {
+	width: 100%;
+	margin: 0;
 }
 
 ::-webkit-scrollbar {
@@ -71,6 +67,53 @@ table {
 	overflow: hidden;
 	bottom: 0;
 	position: fixed;
+}
+
+input {
+  display: none;
+  visibility: hidden;
+}
+
+.desc {
+	font-size: 0.5em;
+	line-height: 2em;
+}
+
+.link {
+	color: #fff;
+}
+
+#toggle_buggy:checked ~ #RoboBuggy_desc {
+	height: 66em;
+}
+
+#RoboBuggy_desc
+{
+	height: 0em;
+	overflow: hidden;
+	transition: height 1s;
+}
+
+#toggle_multi:checked ~ #Multi-Robot_desc {
+	height: 5em;
+}
+
+#Multi-Robot_desc
+{
+	height: 0em;
+	overflow: hidden;
+	transition: height 0.75s;
+}
+
+#toggle_ugly:checked ~ #UglyDuckling_desc {
+	height: 50em;
+}
+
+#UglyDuckling_desc
+{
+	height: 0em;
+	overflow: hidden;
+	transition: height 0.75s;
 }
 
 .items_left
@@ -133,7 +176,7 @@ table {
 
 .content
 {
-	margin: 18% 0% 10% 0%;
+	margin: 18% 15% 0% 15%;
 	font-size: 2em;
 	text-align: center;
 	line-height: 2em;
@@ -144,12 +187,16 @@ table {
 	font-family: Montserrat;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	color: #fff;
+	/*color: #fff;*/
 }
 
 .list_of_projects
 {
 	font-family: Montserrat;
+}
+
+.fa {
+	margin: 0 0.5em;
 }
 
 .blurb
@@ -167,17 +214,18 @@ table {
 
 .box
 {
-	margin: 0 0.1em;
+	margin: 0 0.2em;
 	display: inline-block;
-	height: 2.7em;
-	width: 2.7em;
-	line-height: 2.7em;
+	height: 2.3em;
+	width: 2.3em;
+	line-height: 2.3em;
 }
 
 .s_label
 {
-	height: 2.2em;
-	width: 2.2em;
+	margin: 0 0.2em;
+	height: 2.3em;
+	width: 2.3em;
 	line-height: 2.2em;
 	display: inline-block;
 	border-radius: 10%;
@@ -194,49 +242,6 @@ table {
 }
 
 .s_label:hover
-{
-	height: 2.55em;
-	width: 2.55em;
-	line-height: 2.55em;
-	background-color: #fff;
-	color: #000;
-	transition: 0.2s ease;
-}
-
-.fa_left {
-	margin: 0 0.5em;
-}
-
-.box_left
-{
-	margin: 0 0.2em;
-	display: inline-block;
-	height: 2.3em;
-	width: 2.3em;
-	line-height: 2.7em;
-}
-
-.s_label_left
-{
-	margin: 0 0.2em;
-	height: 2.3em;
-	width: 2.3em;
-	line-height: 2.2em;
-	display: inline-block;
-	border-radius: 10%;
-	border-color: #fff;
-	border-style: solid;
-	border-width: 0.04em;
-	transition: 0.4s ease;
-}
-
-.box_left a
-{
-	text-decoration: none;
-	color: white;
-}
-
-.s_label_left:hover
 {
 	height: 2.3em;
 	width: 2.3em;
