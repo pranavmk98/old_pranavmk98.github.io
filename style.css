@@ -4,6 +4,16 @@ body
 	background-color: black;
 }
 
+p
+{
+	margin-top: -2em;
+}
+
+div
+{
+	margin-top: -0.5em;
+}
+
 .mobile_device_380px {
 	display: none;
 }
@@ -87,7 +97,7 @@ body
 
 .blurb
 {
-	margin-top: -2em;
+	margin-top: -1em;
 	font-family: Source Sans Pro;
 	font-size: 0.65em;
 	color: white;
